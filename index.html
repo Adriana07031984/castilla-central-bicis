@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bicicleta registrada · Cupo 1 · Castilla Central</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="bici.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --negro:#161618; --negro2:#202024; --linea:#2e2e33;
+    --blanco:#f7f7f5; --gris:#a7a7ad;
+    --amarillo:#e3d21f; --verde:#2e9e44; --rojo:#c0182a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Poppins,system-ui,sans-serif;background:var(--negro);color:var(--blanco);
+       min-height:100vh;display:flex;justify-content:center;padding:18px 14px 28px}
+  .tarjeta{width:100%;max-width:420px}
+  header{display:flex;justify-content:center;padding:4px 0 0}
+  header img{width:190px;height:auto;display:block}
+  .onda{height:18px;margin:8px -14px 12px;background:
+    radial-gradient(60% 120% at 50% -40%, transparent 62%, var(--amarillo) 63% 72%, transparent 73%),
+    radial-gradient(60% 120% at 50% -10%, transparent 62%, var(--verde) 63% 67%, transparent 68%)}
+  .estado{display:flex;align-items:center;justify-content:center;gap:8px;background:rgba(46,158,68,.14);
+          border:1.5px solid var(--verde);color:#7fd88f;border-radius:999px;padding:8px 16px;
+          font-weight:600;font-size:14px;width:max-content;margin:0 auto 16px}
+  .estado i{width:9px;height:9px;border-radius:50%;background:#5fd36f;box-shadow:0 0 0 4px rgba(95,211,111,.2)}
+  .foto{border:1px solid var(--linea);border-radius:20px;overflow:hidden;background:#2a2a30}
+  .foto img{display:block;width:100%;height:auto}
+  .cupo{margin:-30px auto 0;position:relative;width:170px;background:var(--negro);border:3px solid var(--amarillo);
+        border-radius:14px;text-align:center;padding:4px 0 6px;box-shadow:0 8px 20px rgba(0,0,0,.45)}
+  .cupo small{display:block;font-size:10px;font-weight:600;letter-spacing:3px;color:var(--verde)}
+  .cupo b{display:block;font-size:40px;font-weight:800;line-height:1;color:var(--amarillo)}
+  .resaltes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+  .res{background:var(--negro2);border:1px solid var(--linea);border-radius:16px;padding:12px 6px;text-align:center}
+  .res span{display:block;color:var(--gris);font-size:11px}
+  .res b{display:block;font-size:24px;font-weight:700;line-height:1.2}
+  .bloque{background:var(--negro2);border:1px solid var(--linea);border-radius:18px;padding:6px 16px;margin-top:16px}
+  .fila{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--linea)}
+  .fila:last-child{border-bottom:0}
+  .fila span{color:var(--gris);font-size:13px}
+  .fila b{font-weight:600;font-size:15px;text-align:right}
+  .porteria{display:block;margin-top:16px;background:var(--rojo);color:#fff;text-decoration:none;
+        text-align:center;font-weight:700;border-radius:14px;padding:14px;font-size:15px}
+  .porteria small{display:block;font-weight:500;font-size:12px}
+  .aviso{margin-top:16px;font-size:12px;color:var(--gris);text-align:center;line-height:1.5}
+  .ejemplo{margin-top:14px;text-align:center;font-size:11px;color:#8a8a90;border:1px dashed #3a3a40;border-radius:12px;padding:8px}
+</style>
+</head>
+<body>
+<main class="tarjeta">
+  <header>
+    <img src="../logo.png" width="320" height="249" alt="Conjunto Castilla Central">
+  </header>
+  <div class="onda" aria-hidden="true"></div>
+
+  <div class="estado"><i></i> Bicicleta registrada</div>
+
+  <section class="foto" aria-label="Foto de la bicicleta">
+    <img src="bici.jpg" width="720" height="480" fetchpriority="high" decoding="async" alt="Bicicleta roja de ruta">
+  </section>
+
+  <div class="cupo"><small>CUPO BICI</small><b>1</b></div>
+
+  <div class="resaltes">
+    <div class="res"><span>Torre</span><b>2</b></div>
+    <div class="res"><span>Apartamento</span><b>504</b></div>
+  </div>
+
+  <section class="bloque" aria-label="Datos de la bicicleta">
+    <div class="fila"><span>Propietario</span><b>Carlos Pérez Montes</b></div>
+    <div class="fila"><span>Tipo</span><b>Ruta</b></div>
+    <div class="fila"><span>Marca</span><b>GW</b></div>
+    <div class="fila"><span>Color</span><b>Rojo</b></div>
+    <div class="fila"><span>N.º de serie</span><b>GW23R0418576</b></div>
+    <div class="fila"><span>Vigencia del registro</span><b>31/12/2027</b></div>
+  </section>
+
+  <a class="porteria" href="tel:+57">Comunicarse con portería<small>Tel. [TELÉFONO PORTERÍA]</small></a>
+
+  <p class="aviso">Esta bicicleta está registrada en la administración del Conjunto Castilla Central para el cupo asignado.</p>
+  <p class="ejemplo">Ficha de ejemplo: foto ilustrativa y datos ficticios.</p>
+</main>
+</body>
+</html>
